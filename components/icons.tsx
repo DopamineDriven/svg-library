@@ -8,9 +8,9 @@ import {
 	faVercelIcon,
 	faTypeScriptIcon
 } from '../lib/fas-custom-integration';
-import { ObjectId } from 'mongodb';
+
 interface MappingProps {
-	_id: string;
+	_id?: number;
 	href: string;
 	name: string;
 	icon: IconProp;
@@ -18,37 +18,37 @@ interface MappingProps {
 
 const iconLinks: MappingProps[] = [
 	{
-		_id: new ObjectId().toHexString(),
+		_id: 1,
 		href: 'https://auth0.com/',
 		name: 'auth0',
 		icon: faAuth0Icon
 	},
 	{
-		_id: new ObjectId().toHexString(),
+		_id: 2,
 		href: 'https://www.graphql.com/',
 		name: 'graphql',
 		icon: faGraphQLIcon
 	},
 	{
-		_id: new ObjectId().toHexString(),
+		_id: 3,
 		href: 'https://www.heroku.com/',
 		name: 'heroku',
 		icon: faHerokuIcon
 	},
 	{
-		_id: new ObjectId().toHexString(),
+		_id: 4,
 		href: 'https://nextjs.org/',
 		name: 'next',
 		icon: faNextIcon
 	},
 	{
-		_id: new ObjectId().toHexString(),
+		_id: 5,
 		href: 'https://vercel.com/',
 		name: 'vercel',
 		icon: faVercelIcon
 	},
 	{
-		_id: new ObjectId().toHexString(),
+		_id: 6,
 		href: 'https://twitter.com/Dopamine_Driven',
 		name: 'typescript',
 		icon: faTypeScriptIcon
@@ -72,21 +72,19 @@ const Icons = () => {
 			aria-label={link.name}
 			target='__blank'
 			href={link.href}
-			className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-8 h-8 mx-1 my-2 pt-1 rounded-full focus:outline-none'
+			className='bg-black text-white hover:text-white hover:bg-iconHover transition-colors leading-normal duration-500 text-lg inline-block text-center items-center align-middle justify-center w-24 h-24 mx-6 my-2 pt-6 rounded-full focus:outline-none'
 		>
 			<FontAwesomeIcon
 				icon={link.icon}
 				className='flex align-middle text-center font-extrabold text-1xl pb-1'
-				size='lg'
+				size='3x'
 			/>
 		</a>
 	));
 	return (
-		<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 col-gap-8 row-gap-6 align-middle text-center'>
+		<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 col-gap-8 row-gap-6 align-middle text-center'>
 			<ul className='align-middle'>
-				<li className='align-middle'>
-					{iconMap}
-				</li>
+				<li className='align-middle'>{iconMap}</li>
 			</ul>
 		</div>
 	);

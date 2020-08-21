@@ -17,15 +17,7 @@ type HeaderProps = {
 const links: NavRef[] = [
 	{
 		href: '/',
-		label: 'Portfolio'
-	},
-	{
-		href: '/about',
-		label: 'About'
-	},
-	{
-		href: '/contact',
-		label: 'Contact'
+		label: 'Library'
 	}
 ];
 

@@ -11,6 +11,7 @@ interface Props {
 }
 
 const About = ({ preview }: Props) => {
+	const icons = <Icons />;
 	return (
 		<>
 			<Header />
@@ -19,7 +20,7 @@ const About = ({ preview }: Props) => {
 					<title>{`${CLIENT_NAME} about page`}</title>
 				</Head>
 				<Container>
-					<Icons />
+					<div>{icons}</div>
 				</Container>
 			</Layout>
 		</>
