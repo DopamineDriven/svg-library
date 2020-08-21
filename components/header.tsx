@@ -29,7 +29,7 @@ const links: NavRef[] = [
 	}
 ];
 
-const Header = ({ props }: HeaderProps) => {
+const Header = () => {
 	const [navOpen, setNavOpen] = useState(false);
 	const navText = navOpen ? '  duration-700' : ' duration-700';
 	const navlist = links.map(link => (
