@@ -1,6 +1,6 @@
-import { CMS_NAME, CMS_URL } from '../lib/constants';
+// import { CMS_URL } from '../lib/constants';
 import Link from 'next/link';
-import SvgComponent from './svg-logo-only';
+// import SvgComponent from './svg-logo-only';
 import CustomLogo from './white-svg';
 interface SortRef {
 	href: string;
@@ -132,15 +132,6 @@ export default function Intro({ props }: IntroProps) {
 					target='__blank'
 				>
 					Tailwind&nbsp;CSS
-				</a>
-				,{' '}
-				<a
-					href={CMS_URL}
-					className='underline hover:text-success duration-500 transition-colors'
-					aria-label={`${CMS_NAME}`}
-					target='__blank'
-				>
-					{CMS_NAME}
 				</a>
 				,&nbsp;and{' '}
 				<a

@@ -1,7 +1,7 @@
 {
-	"name": "JAMstack Portfolio",
-	"short_name": "JAMstack",
-	"start_url": "https://next-jamstack-portfolio.vercel.app/",
+	"name": "SVG Library",
+	"short_name": "svg-lib",
+	"start_url": "https://svg-library.vercel.app/",
 	"icons": [
 		{
 			"src": "/fav/android-chrome-192x192.png",

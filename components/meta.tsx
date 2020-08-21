@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants';
+import { HOME_OG_IMAGE_URL } from '../lib/constants';
 import { Fragment } from 'react';
 
 const MetaData = () => {
@@ -39,7 +39,7 @@ const MetaData = () => {
 				<link rel='alternate' type='application/rss+xml' href='/feed.xml' />
 				<meta
 					name='description'
-					content={`Static Site Generation via Next.js and ${CMS_NAME}.`}
+					content={`Static Site Generation via Next.js.`}
 				/>
 				<meta property='og:image' content={HOME_OG_IMAGE_URL} />
 				<meta charSet='utf-8' />

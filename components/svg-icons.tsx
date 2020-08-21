@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, SVGProps } from 'react';
 import SvgIconConstituentValues from '../types/svg-icons';
 // FC can be parameterized via Abstraction
 
